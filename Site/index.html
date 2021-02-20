@@ -8,5 +8,82 @@
 </head>
 
 <body>
-</body>
+<input type="checkbox" id="trigger">
+<label for="trigger" id="trigger_btn"><span class="hdn">メニューボタン</span></label>
+<div id="contents">
+	<header>
+		<h1>Site title</h1>
+	</header>
+	<main>
+		<p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p><p>本文入ります。</p>
+	</main>
+</div>
+<div id="nav_column">
+	<ul class="global_nav">
+		<li>
+			<input type="checkbox" name="drnav" id="hd_01" class="hd_ac">
+			<label for="hd_01">
+				<h2><span>Category</span></h2>
+			</label>
+			<ul class="lower_nav">
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+			</ul>
+		</li>
+		
+		<li>
+			<input type="checkbox" name="drnav" id="hd_02" class="hd_ac">
+			<label for="hd_02">
+				<h2><span>Category</span></h2>
+			</label>
+			<ul class="lower_nav">
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+			</ul>
+		</li>
+		
+		<li>
+			<input type="checkbox" name="drnav" id="hd_03" class="hd_ac">
+			<label for="hd_03">
+				<h2><span>Category</span></h2>
+			</label>
+			<ul class="lower_nav">
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+			</ul>
+		</li>
+		
+		<li>
+			<input type="checkbox" name="drnav" id="hd_04" class="hd_ac">
+			<label for="hd_04">
+				<h2><span>Category</span></h2>
+			</label>
+			<ul class="lower_nav">
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+				<li><a href="#"><span>Lower Menu</span></a></li>
+			</ul>
+		</li>
+		<li><a href="#" class="bold"><span>Menu</span></a></li>
+		<li><a href="#" class="bold"><span>Menu</span></a></li>
+	</ul>
+</div>
+<label for="trigger" id="coverlayer"></label>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+$(window).on('load resize', function(){
+	var winW = $(window).width();
+	var devW = 768;
+	if (winW >= devW) {
+		$("#trigger").prop('checked', false);//windowサイズが768px以上になったらチェックボックスのチェックを外す
+	}
+});
+</script>
 </html>
